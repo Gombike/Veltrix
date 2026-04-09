@@ -1,0 +1,533 @@
+body {
+    background-image: url('/assets/images/background-image.png');
+    background-color: #000;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    text-align: center;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.button {
+    background-color: #90ee90;
+    color: #000;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); */
+}
+.button:hover {
+    box-shadow: 0 1px 1px 0 #90ee90,0 5px 25px 0 #90ee908a;
+}
+
+.button-discord {
+    background-color: #90ee90;
+    color: #000;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.button-discord:hover {
+    box-shadow: 0 1px 1px 0 #90ee90,0 5px 25px 0 #90ee908a;
+}
+
+.cta-content {
+    text-align: left;
+    margin-left: 20%;
+}
+
+header {
+    padding: 40px 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.logo img {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+
+.logo h1:before {
+    content: 'Vel';
+    color: white;
+    /* font-size: 32px; */
+}
+.logo h1:after {
+    content: 'trix';
+    color: white;
+    /* font-size: 32px; */
+}
+
+.logo p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #aaa;
+    letter-spacing: 5px;
+}
+
+header nav {
+    margin-top: 20px;
+}
+
+.hero {
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 20px;
+}
+
+.why-us {
+    padding: 50px 20px;
+    background-color: rgba(17, 17, 17, 0.85);
+}
+
+.why-us h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #90ee90;
+    text-shadow:
+        0 0 15px rgba(144, 238, 144, 0.5),
+        0 0 40px rgba(144, 238, 144, 0.3);
+    position: relative;
+}
+
+.intro-text {
+    max-width: 800px;
+    margin: 0 auto 50px auto;
+    margin-right: 25%;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: rgba(26, 26, 26, 0.9);
+    position: relative;
+}
+
+.text-content {
+    text-align: center;
+}
+
+.car-image {
+    position: absolute;
+    width: 400px;
+    height: auto;
+    border-radius: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -37%;
+}
+
+@media (max-width: 1200px) {
+    .car-image {
+        width: 300px;
+        right: -150px;
+    }
+}
+
+@media (max-width: 992px) {
+    .intro-text {
+        position: static;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .car-image {
+        position: static;
+        transform: none;
+        display: block;
+        margin: 25px auto 0 auto;
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+.intro-text p {
+    text-align: inherit;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.feature {
+    background-color: rgba(26, 26, 26, 0.9); 
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.feature h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.feature p {
+    color: #ccc;
+    line-height: 1.6;
+}
+
+.feature-banyakep {
+    background-color: rgba(26, 26, 26, 0.9); 
+    padding: 30px;
+    border-radius: 15px;
+    position: relative;
+}
+
+.feature-banyakep h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.feature-banyakep p {
+    color: #ccc;
+    line-height: 1.6;
+}
+
+.community-image {
+    position: absolute;
+    max-width: 200px;
+    border-radius: 50px;
+    float: right;
+    margin-left: 20px;
+    top: -50%;
+    right: -10%;
+}
+
+.call-to-action {
+    padding: 80px 20px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* border-radius: 15px; */
+}
+
+.discord-icon img {
+    width: 150px;
+    opacity: 0.1;
+    position: absolute;
+    right: 10%;
+    bottom: 20%;
+    z-index: -1;
+}
+
+.call-to-action h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: left;
+    margin-left: 20%;
+}
+
+.call-to-action h2:before {
+    /* font-size: 1.5em; */
+    content: 'KÉSZEN ÁLLSZ';
+    color: #90ee90;
+    /* font-size: 32px; */
+}
+.call-to-action h2:after {
+    content: '';
+    color: white;
+    /* font-size: 32px; */
+}
+
+.call-to-action p {
+    margin-bottom: 30px;
+    text-align: left;
+    margin-left: 20%;
+    letter-spacing: 5px;
+}
+
+footer {
+    padding: 40px 20px;
+    background-color: rgba(17, 17, 17, 0.85);
+}
+
+.szoveg {
+    letter-spacing: 6px;
+    color: #777;
+}
+
+/* .socials {
+    background-color: rgba(26, 26, 26, 0.9);
+    margin: 20px auto;
+    padding: 12px;
+    border-radius: 15px;
+    max-width: 300px;
+    text-align: center;
+} */
+
+.socials a {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2em;
+    color: #000;
+}
+
+.button-tiktok {
+    background-color: #777;
+    color: #000;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-weight: bold;
+    /* text-transform: uppercase; */
+    display: inline-block;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.button-tiktok:hover {
+    box-shadow: 0 1px 1px 0 #777,0 5px 25px 0 #7777779d;
+}
+
+.tiktok-icon {
+    width: 24px;
+}
+
+.credits {
+    margin-top: 30px;
+    font-size: 0.8em;
+    color: #777;
+}
+
+.credits p {
+    margin: 5px 0;
+}
+
+.server-stats {
+    display: flex;
+    flex-direction: row; 
+    gap: 20px;
+    max-width: 450px; 
+    margin: 20px auto;
+    text-align: left;
+}
+
+.server {
+    background-color: rgba(26, 26, 26, 0.9); 
+    padding: 30px;
+    border-radius: 15px;
+    flex: 1;
+    text-align: center;
+}
+
+.img .tiktok-icon {
+    color: white;
+}
+
+::-webkit-scrollbar
+{
+    width: 12px;
+}
+::-webkit-scrollbar-thumb
+{
+    background: #242627;
+    border-radius: 6px;
+}
+
+.menu
+{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 120px;
+    height: 60px;
+    background: #111;
+    box-shadow: 0 25px 35px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    transition: height 0.5s, width 0.5s;
+    transition-delay: 0s, 0.75s;
+    overflow: hidden;
+}
+.menu.active
+{
+    width: 300px;
+    height: 180px;
+    transition: width 0.5s, height 0.5s;
+    transition-delay: 0s, 0.75s;
+}
+.menu .userBox
+{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background: #111;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+.menu.active .userBox
+{
+    width: calc(100% - 60px);
+    transition-delay: 0s;
+}
+.menu .userBox .servername
+{
+    display: flex;
+    margin: 20px 0;
+    align-items: center;
+    gap: 10px;
+    font-size: 1em;
+    text-decoration: none;
+    color: white;
+}
+.menu .userbox .servername a
+{
+    display: flex;
+    margin: 20px 0;
+    align-items: center;
+    gap: 10px;
+    font-size: 1em;
+    text-decoration: none;
+    color: white;
+}
+.menu .userbox .servername a:hover
+{
+    color: white;
+}
+.menu.active .userBox .servername
+{
+    display: flex;
+    margin: 20px 0;
+    align-items: center;
+    gap: 10px;
+    font-size: 1em;
+    text-decoration: none;
+    color: white;
+}
+.menu.active .userbox .servername a
+{
+    display: flex;
+    margin: 20px 0;
+    align-items: center;
+    gap: 10px;
+    font-size: 1em;
+    text-decoration: none;
+    color: white;
+}
+.menu.active .userbox .servername a:hover
+{
+    color: white;
+}
+.menu .userBox .imgBox
+{
+    position: relative;
+    min-width: 60px;
+    height: 60px;
+    overflow: hidden;
+    background: #111;
+    border-radius: 50%;
+    border: 5px solid #111;
+}
+.menu .userBox .imgBox img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.menu .menuToggle
+{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu .menuToggle::before
+{
+    content: '';
+    position: absolute;
+    width: 32px;
+    height: 2px;
+    background: #555;
+    transform: translateY(-10px);
+    box-shadow: 0 10px #555;
+    transition: 0.5s;
+}
+.menu .menuToggle::after
+{
+    content: '';
+    position: absolute;
+    width: 32px;
+    height: 2px;
+    background: #555;
+    transform: translateY(10px);
+    transition: 0.5s;
+}
+.menu.active .menuToggle::before
+{
+    transform: translateY(0px) rotate(45deg);
+    box-shadow: 0 0 #555;
+}
+.menu.active .menuToggle::after
+{
+    transform: translateY(0px) rotate(-45deg);
+}
+
+.menuu
+{
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 60px);
+    margin-top: 60px;
+    padding: 20px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    background: #111;
+}
+.menuu li
+{
+    list-style: none;
+}
+.menuu li a
+{
+    display: flex;
+    margin: 10px 0;
+    align-items: center;
+    gap: 10px;
+    font-size: 1em;
+    text-decoration: none;
+    color: white;
+}
+.menuu li a:hover
+{
+    color: white;
+}
+.menuu li a ion-icon
+{
+    font-size: 1.5em;
+}
